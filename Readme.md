@@ -11,10 +11,12 @@ Prerequisites:
 ```shell
 vagrant plugin install vagrant-disksize
 ```
+3. Install ansible
 
 Finally setup a VM containing the Jenkins-Docker-Pipeline by running:
 ```shell
-git clone git@github.com:ledergec/docker-jenkins-pipeline.git
+git clone https://github.com/ledergec/docker-jenkins-pipeline.git
+cd docker-jenkins-pipeline
 git submodule update --init --recursive
 vagrant up
 ```
